@@ -1,10 +1,8 @@
 MACHINE LEARNING
 ================
 
-Fill in  this text with your own intro text.
-another line
-
-hello
+   Machine Learning about gathering data,
+    making prediction.
 
 .. toctree::
    :maxdepth: 1
@@ -12,5 +10,5 @@ hello
 
    chapter1/index
    chapter2/index
-
-
+   chapter3/index
+   chapter4/index

@@ -1,6 +1,7 @@
 Chapter 2
 =========
 
-print("what are the business ogjectives")
+.. raw:: html
+    :file: Housing.html
 
-print("what the current solution looks like")
+

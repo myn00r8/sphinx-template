@@ -5,4 +5,4 @@ hello ``simple class``
 
 .. code-block::
 
-    print("hello")
+    print("hi")

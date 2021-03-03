@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Sample Project'
+project = 'Machine Learning'
 copyright = '2021'
-author = 'Samantha Simpson'
+author = 'Mynor'
 
 
 # -- General configuration ---------------------------------------------------
