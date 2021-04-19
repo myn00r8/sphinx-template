@@ -14338,7 +14338,15 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Export_graphviz will create a dot file and that file will be graphviz representing a decicion tree, and exports it as iris_tree.dot, but It can be convert as an image file applying the right coding.</p>
+<p>We can visually see the trained decision tree by using Export_graphviz which it will create a dot file that will be graphviz representing a decicion tree, and exports it as iris_tree.dot, that later will be converted as an image file applying the code below.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>dot -Tpng iris_tree.dot -o iris_tree.png</p>
+<p>The decision tree will appear as an image, making it easier to understand its prediction. The way the classification works is based on the petal length, if the petal length is smaller or greater than 2.45 cm it will take specific steps to classify that petal lenght to specific type of flower. So, first it will ask if the petal lenght is less than 2.45cm if it is, it will automatically move down to the left child node and because this is the only child node it will not ask any other question, ending the decision tree predicting that the flower is an iris setosa. But if the petal lenght is greater than 2.45cm it will move down to the right child node and because there is another chid node it will ask if the petal width is smaller than 1.74cm if it is, it will assume that the flower is an iri versicolor and if not it will assume that it is an iris virginica.</p>
+<p>Gini tells the purity of a node, if gini=0 it means that all the instances belongs to the same class, but if it is greater than 0 it will mean that there is more than 1 intance that belong to other class, so gini will end up measuring its impurity, sample tells how many training instances have a petal lenght greater than 2.45cm and a petal width smaller than 1.74cm, value tells how many training instances of each class that node applies to, class tells the exact type of flower the prediction will assume which is between setosa, versicolor and virginica.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14418,7 +14426,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This two are just predicting probabilities and classes</p>
+<p>This two are checking the probabilities and prediction for a instance belonging to a particular class for a petal that are 5cm long and 1.5cm wide, the probalitity result are 0% for setosa 90.7% for versicolor and 9.3% for virginica, and the prediction result is 1, so the class that it belong to is versicolor.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
